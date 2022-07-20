@@ -1,0 +1,242 @@
+input[type="radio"]{
+	display: none;
+
+}
+label{
+	padding: 4px 6px 4px 6px;
+	margin: -2px;
+	
+	border: 1.8px solid gold;
+}
+input[type="radio"]:checked + #label1{
+	border: 2px solid rgba(12, 233, 12, 0.712);
+	background: rgba(12, 233, 12, 0.712);
+	box-shadow: 0 0 8px 2px   green;
+	color: black;
+}
+input[type="radio"]:checked + #label2{
+	border: 2px solid rgba(228, 49, 49, 0.753);
+	background: rgba(228, 49, 49, 0.753);;
+	box-shadow: 0 0 8px 2px   red;
+	color: white;
+}
+input[type="date"]{
+	width: 45%;
+	border-radius: 14px;
+	padding: 0 3px 0 3px;
+	height: 26px;
+	margin-left: 32%;
+	background: black;
+	color: white;
+	border: 2px solid gold;
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+	filter: invert(100%);
+}
+input[type="date"]:focus{
+	border: 2px solid palegoldenrod;
+	box-shadow: 0 0 8px 2px   gold;
+}
+input[type="number"]:focus, input[type="text"]:focus{
+	border: 2px solid lightsteelblue;
+	box-shadow: 0 0 8px 2px   steelblue;
+}
+input[type="submit"]{
+	font-size: 17px;
+	font-weight: 600;
+	padding: 3px 0 3px 0;
+	background: steelblue;
+	border-radius: 10px;
+	border: 2px solid lightsteelblue;
+	margin: auto;
+	width: 82%;
+}
+input[type="submit"]:focus{
+	border: 1px solid lightsteelblue;
+	background: lightsteelblue;
+	box-shadow: 0 0 8px 2px   steelblue;
+}
+
+input[type="number"], input[type="text"]{
+	width: 76%;
+	border-radius: 14px;
+	/*height: 22px;*/
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 2px solid steelblue;
+	background: black;
+	color: white;
+	text-align: center;
+	font-size: large;
+}
+
+.completed_id{
+	background: lightgray;
+	opacity: 25%;
+}
+
+.incomplete_id{
+	background: palegoldenrod;
+}
+
+#whatsapp{
+	
+	position: fixed;
+	display: inline-block;
+	
+	bottom: 3%;
+	right: 6%;
+	/*left: 60%;*/
+}
+.fa-whatsapp{
+	font-size: 28px;
+	color: white;
+	background: #25d366;
+	padding: 8px;
+	border-radius: 50%;
+}
+
+table{
+	margin: auto;
+	text-align: center;
+	width: 95%;
+	border-collapse: separate;
+	
+	background: #333;
+	border-radius: 15px;
+	border: 2px solid black;
+	margin-bottom: 65px;
+	font-size: large;
+}
+td,th{
+	border-left: 0.5px solid black;
+	border-top: 0.5px solid black;
+}
+th{
+	border-top: none;
+	padding: 3px;
+	background: steelblue;
+}
+
+th:first-child, td:first-child{
+	border-left: none;
+}
+th:first-child{
+	border-radius: 13px 0 0 0;
+}
+th:last-child{
+	border-radius: 0 13px 0 0;
+}
+tr:last-child td:first-child{
+	border-radius: 0 0 0 13px;
+}
+tr:last-child td:last-child{
+	border-radius: 0 0 13px 0;
+}
+td:last-child{
+	font-size: medium;
+	padding: 5px 0;
+}
+body{
+	margin-bottom: 22%;
+	background: #333;
+
+}
+#amount{
+	float: right;
+	position: absolute;
+	right: 10%;
+	top: 38px;
+	font-size: 26px;
+	text-align: center;
+}
+#inner_amount{
+	font-size: large;
+	color: white;
+	margin-top: 10px;
+}
+#form{
+	margin: auto;
+	/*background: black;*/
+	width: 95%;
+	text-align: center;
+	padding: 10px 10px 10px 0;
+}
+#label1{
+	border-radius: 15px 0 0 15px;
+    border: 2px solid green;
+    color: green;
+}
+#label2{
+	border-radius: 0 15px 15px 0;
+     border: 2px solid red;
+    color: red;
+}
+#radio_span{
+	margin-top: 6px;
+	left: 15%;
+	display: inline-block;
+	position: absolute;
+
+}
+.top, #accounts{
+	background: black;
+	padding: 10px 0 10px 0;
+	width: 100%;
+	color: white;
+}
+
+.accounts{
+	color: steelblue;
+	margin-left: 12px;
+}
+
+p span{
+	color: white;
+}
+
+hr{
+	box-shadow: 0 0 6px  yellow;
+	margin-top: -2px;
+	text-align: center;
+}
+.tooltip{
+	position: relative;
+}
+.tooltip .tooltip_text{
+	visibility: hidden;
+	background: black;
+	width: 100%;
+	height: auto;
+	bottom: 115%;
+	left: 50%;
+	border-radius: 5px;
+	padding: 3px 0 3px 0;
+	margin-left: -50%;
+	text-align: center;
+	word-wrap: break-word;
+	color: white;
+
+	position: absolute;
+}
+.tooltip:hover .tooltip_text{
+	visibility: visible;
+}
+
+.tooltip .tooltip_text::after{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	/*border: 5px solid black;*/
+	border-width: 6px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+
+
+
+body,html{
+	margin: 0;
+	padding: 0;
+}

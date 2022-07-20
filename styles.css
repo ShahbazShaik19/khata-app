@@ -1,0 +1,165 @@
+body{
+	background: #333;
+}
+
+.accounts{
+	background: steelblue;
+	border: solid 1px black;
+	border-radius: 15px;
+	margin-top: 5px;
+	padding: 5px 0 5px 0;
+	text-align: center;
+	font-size: large;
+	font-weight: 1000;
+	color: antiquewhite;
+}
+
+
+.accounts:hover{
+	background: lightsteelblue;
+	border: 1px solid lightsteelblue;
+	box-shadow: 0 0 8px 2px steelblue;
+	color: #111;
+}
+
+#add{
+	background: gold;
+    margin-right: 10px;
+    font-size:large;
+	padding: 8px;
+    font-weight: 400;
+	border-radius: 10px;
+
+}
+
+summary{
+	cursor: pointer;
+	display: inline;
+	float: right;
+    clear: both;
+	margin-top: 10px;
+}
+
+details{
+	/*margin-bottom: 20px;*/
+	background: #111;
+	border-radius: 20px;
+
+	
+}
+
+#form{
+	margin: auto;
+	width: 70%;
+	text-align: center;
+}
+
+form{
+	/*margin: auto;
+	width: 50%;*/
+	font-size: medium;
+	font-weight: 700;
+	color: antiquewhite;
+}
+
+form label{
+	margin-left: -55%;
+}
+
+.form_input{
+	outline-style: none;
+	background: #111;
+	color: gold;
+	border: none;
+	border-bottom: 1px solid steelblue;
+	/*border-radius: 5px;*/
+	margin-bottom: 20px;
+	margin-top: 10px;
+	width: 85%;
+}
+
+.form_input:focus{
+	width: 100%;
+	/*margin-left: -20%;*/
+	transition: 0.1s;
+	border-bottom: 2px solid lightsteelblue;
+	box-shadow: 0px 6px 12px -6.3px steelblue;
+}
+
+/*input[type="text"]:focus*/ label:hover{
+	font-size: 12px;
+	transition: 0.3s;
+	color: yellow;
+	margin-left: -75%;
+}
+
+details[open]{
+	animation: open .4s ease-in-out;
+	padding-bottom: 10px;
+
+}
+
+details:not([open]){
+	animation: close .5s ease-in-out;
+}
+
+
+@keyframes open{
+	0% {
+		opacity:  0;
+		margin-bottom: -100px;
+	}
+	100% {
+		opacity: 1;
+		margin-bottom: 40px;
+	}
+
+}
+
+@keyframes close{
+	0% {
+		opacity:  1;
+		margin-bottom: 100px;
+	}
+	100% {
+		opacity: 0;
+		margin-bottom: 40px;
+	}
+
+}
+
+
+
+details[open] #add{
+	margin-bottom: -10px;
+}
+
+hr{
+	box-shadow: 0 0 6px  gold;
+    /* margin-bottom: 20px; */
+    margin-top: -2px;
+}
+
+#btn{
+	font-size: 15px;
+	font-weight: 600;
+	padding: 3px 0 3px 0;
+	border: 1px solid palegoldenrod;
+	background: palegoldenrod;
+	box-shadow: 0 0 8px 2px   gold;
+	border-radius: 10px;
+	margin: auto;
+	width: 100%;
+}
+
+#btn:hover{
+	background: gold;
+}
+
+#acc{
+	color: gold;
+}
+
+/*#search{
+	all: revert;
+}*/
