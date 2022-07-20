@@ -32,13 +32,9 @@
 	// echo $name;
 
 
-	$host='sql307.epizy.com';
-	$user='epiz_30037702';
-	$pass='fAOyHnNjWwrzde';
-	$db='epiz_30037702_first';
 
-	// $db = mysqli_connect("localhost","root","","test");
-	$db = mysqli_connect($host,$user,$pass,$db);
+	$db = mysqli_connect("localhost","root","","test");
+	//$db = mysqli_connect($host,$user,$pass,$db);
 
 	if(!$db)
 	{
