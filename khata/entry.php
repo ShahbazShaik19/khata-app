@@ -10,7 +10,7 @@
 <body>
 	<script>
 	    function redirect(){
-	        window.location.replace("http://shahbaz.ml/khata/history.php?name=<?php echo $name ?>");
+	        window.location.replace("localhost/khata/history.php?name=<?php echo $name ?>");
 	    }
 	</script>
 	<div style="margin: auto; width: 100%; height: 100%; text-align: center; padding-top: 50%;">PROCESSING....</div>
